@@ -5,6 +5,8 @@ from wtforms import (StringField, TextAreaField, IntegerField, BooleanField,
 from wtforms.validators import InputRequired, Length
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = '15c1b7efdf870d0315df78598f99ca31e83e33776af579bb'
+
 
 class CourseForm(FlaskForm):
     title = StringField('Title', validators=[InputRequired(),
