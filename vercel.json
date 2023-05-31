@@ -1,0 +1,14 @@
+ {
+     "builds": [
+         {
+             "src": "api/CobaWTF.py",
+             "use": "@vercel/python"
+         }
+     ],
+     "routes": [
+         {
+             "src": "/(.*)",
+             "dest": "api/CobaWTF.py"
+         }
+     ]
+ }
